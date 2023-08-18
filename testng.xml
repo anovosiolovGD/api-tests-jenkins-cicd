@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CRUD Retrofit and RestAssured tests for Trello API">
+    <test name="Retrofit and RestAssured tests">
+        <classes>
+            <class name="retrofit.TrelloTestsWithRetrofit">
+                <methods>
+                    <include name="createBoardTest"/>
+                    <include name="getBoardTest"/>
+                    <include name="changeBoardName"/>
+                    <include name="deleteBoard"/>
+                </methods>
+            </class>
+            <class name="restAssured.TrelloTestWithRestAssured">
+                <methods>
+                    <include name="createBoardTest"/>
+                    <include name="getBoardTest"/>
+                    <include name="changeBoardNameTest"/>
+                    <include name="deleteBoardTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

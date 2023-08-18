@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="2" name="TestSuite" time="3.01" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2022.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.17+8"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/anovosiolov/Desktop/trello-test"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/anovosiolov/Desktop/trello-test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.17+8"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/px/0kxmjnz93rxd3pn2kkt_j3jr0000gp/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Users/anovosiolov/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8214.52/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/Users/anovosiolov/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8214.52/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/anovosiolov/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="maven.conf" value="/Users/anovosiolov/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8214.52/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="12.5.1"/>
+    <property name="user.home" value="/Users/anovosiolov"/>
+    <property name="user.timezone" value="Europe/Chisinau"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="anovosiolov"/>
+    <property name="java.class.path" value="/Users/anovosiolov/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8214.52/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Users/anovosiolov/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8214.52/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.3.1 clean install"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.17"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="maven.home" value="/Users/anovosiolov/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8214.52/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-11.0.17+8"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="api.TrelloAPITest" name="createBoardTest" time="2.401">
+    <failure message="Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/plain; charset=utf-8&apos;." type="java.lang.IllegalStateException">java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/plain; charset=utf-8&apos;.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:238)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:84)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:220)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:166)
+	at testStepsLib.CreateBoardSteps.sendRequest(CreateBoardSteps.java:22)
+	at api.TrelloAPITest.createBoardTest(TrelloAPITest.java:13)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@6f195bc3
+HTTP/1.1 415 Unsupported Media Type
+Date: Thu, 29 Jun 2023 10:55:46 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 18
+X-Dns-Prefetch-Control: off
+Expect-Ct: max-age=0
+X-Frame-Options: DENY
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Surrogate-Control: no-store
+Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+Pragma: no-cache
+Expires: 0
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 9b410d4cbca59079
+Report-To: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}
+Nel: {&quot;failure_fraction&quot;: 0.001, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}
+Strict-Transport-Security: max-age=63072000; preload
+
+Error parsing body
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</system-err>
+  </testcase>
+  <testcase classname="api.TrelloAPITest" name="getBoardTest" time="0.609">
+    <failure message="Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/plain; charset=utf-8&apos;." type="java.lang.IllegalStateException">java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/plain; charset=utf-8&apos;.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:84)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:220)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:166)
+	at testStepsLib.GetBoardSteps.sendRequest(GetBoardSteps.java:23)
+	at api.TrelloAPITest.getBoardTest(TrelloAPITest.java:22)
+</failure>
+    <system-out>HTTP/1.1 400 Bad Request
+Date: Thu, 29 Jun 2023 10:55:47 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 10
+X-Dns-Prefetch-Control: off
+Expect-Ct: max-age=0
+X-Frame-Options: DENY
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Surrogate-Control: no-store
+Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+Pragma: no-cache
+Expires: 0
+X-Trello-Version: 1.218028.0
+X-Trello-Environment: Production
+Set-Cookie: dsc=b7742b81b37d9c521d15a017985e37dac8f1c1028a7cafc8669e06a7b4ff928a; Path=/; Expires=Thu, 13 Jul 2023 10:55:47 GMT; Secure; SameSite=None
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 99
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 299
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 81a03f16eec39a1c
+Report-To: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}
+Nel: {&quot;failure_fraction&quot;: 0.001, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}
+Strict-Transport-Security: max-age=63072000; preload
+
+invalid id
+</system-out>
+  </testcase>
+</testsuite>

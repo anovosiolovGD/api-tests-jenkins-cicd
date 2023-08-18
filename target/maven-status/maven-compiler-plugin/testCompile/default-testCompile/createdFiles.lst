@@ -1,0 +1,7 @@
+testStepsLib/GetBoardSteps.class
+api/Specifications.class
+api/BoardData.class
+testStepsLib/CreateBoardSteps.class
+utils/TestProperties.class
+api/BaseTest.class
+api/TrelloAPITest.class
