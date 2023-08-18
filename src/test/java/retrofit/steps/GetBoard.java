@@ -1,5 +1,6 @@
 package retrofit.steps;
 
+import io.qameta.allure.Step;
 import model.BoardData;
 import org.testng.Assert;
 import retrofit.BaseTestRetrofit;
@@ -14,12 +15,12 @@ public class GetBoard extends BaseTestRetrofit {
     private String actualBoardName;
     private String actualBoardId;
     private Response<BoardData> response;
-
+    @Step("Preparing data")
     public void preparePayload() {
         actualBoardName = properties.getBoardName();
         actualBoardId = properties.getBoardId();
     }
-
+    @Step("Sending GET request")
     public void sendRequest() throws IOException {
         response = trelloBoardService
                 .getBoard(
@@ -29,7 +30,7 @@ public class GetBoard extends BaseTestRetrofit {
                 .execute();
         expectedBoardData = response.body();
     }
-
+    @Step("Assert result")
     public void assertResponse() {
         Assert.assertTrue(response.isSuccessful());
         Assert.assertEquals(actualBoardName, expectedBoardData.getName());

@@ -1,14 +1,15 @@
 package retrofit;
 
 import org.testng.annotations.Test;
-import retrofit.BaseTestRetrofit;
+import io.qameta.allure.testng.AllureTestNg;
+import org.testng.annotations.Listeners;
 import retrofit.steps.ChangeName;
 import retrofit.steps.CreateBoard;
 import retrofit.steps.DeleteBoard;
 import retrofit.steps.GetBoard;
 
 import java.io.IOException;
-
+@Listeners({AllureTestNg.class})
 public class TrelloTestsWithRetrofit extends BaseTestRetrofit {
     @Test(priority = 1)
     public void createBoardTest() throws IOException {

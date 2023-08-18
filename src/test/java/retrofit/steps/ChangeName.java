@@ -1,12 +1,11 @@
 package retrofit.steps;
 
+import io.qameta.allure.Step;
 import model.BoardData;
 import org.testng.Assert;
 import retrofit.BaseTestRetrofit;
 import retrofit2.Response;
-
 import java.io.IOException;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ChangeName extends BaseTestRetrofit {
@@ -15,11 +14,13 @@ public class ChangeName extends BaseTestRetrofit {
     private String actualBoardId;
     private Response<BoardData> response;
 
+    @Step("Preparing test data")
     public void preparePayload() {
         newBoardName = "goodName";
         actualBoardId = properties.getBoardId();
     }
 
+    @Step("Sending PUT request")
     public void sendRequest() throws IOException {
         response = trelloBoardService
                 .changeBoardName(
@@ -32,6 +33,7 @@ public class ChangeName extends BaseTestRetrofit {
         saveBoardDataInProperties(expectedBoardData);
     }
 
+    @Step("Assert result")
     public void assertResponse() {
         Assert.assertTrue(response.isSuccessful());
         Assert.assertEquals(newBoardName, expectedBoardData.getName());

@@ -1,11 +1,14 @@
 package restAssured;
 
+import io.qameta.allure.testng.AllureTestNg;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import restAssured.testStepsLib.ChangeBoardNameStep;
 import restAssured.testStepsLib.CreateBoardSteps;
 import restAssured.testStepsLib.DeleteBoardStep;
 import restAssured.testStepsLib.GetBoardSteps;
 
+@Listeners({AllureTestNg.class})
 public class TrelloTestWithRestAssured {
     @Test(priority = 1)
     public void createBoardTest() {
